@@ -1,0 +1,102 @@
+.carrousel {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 255px;
+    margin: 2% 0;
+    overflow: hidden;
+
+    @media screen and (min-width: $breakpoint-desktop) {
+        height: 415px;
+    }
+
+    .slider {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0%;
+        right: 0%;
+        top: 0%;
+        bottom: 0%;
+        @include small-radius;
+
+
+
+        @media screen and (min-width: $breakpoint-desktop) {
+            @include big-radius;
+        }
+
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            left: 0%;
+            right: 0%;
+            top: 0%;
+            bottom: 0%;
+            mix-blend-mode: normal;
+            @include small-radius;
+
+            @media screen and (min-width: $breakpoint-desktop) {
+                @include big-radius;
+            }
+        }
+
+        &__number {
+            display: none;
+
+            @media screen and (min-width: $breakpoint-desktop) {
+                display: block;
+                position: absolute;
+
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 142.6%;
+                color: #FFFFFF;
+                left: 48%;
+                top: 86%;
+            }
+        }
+    }
+}
+
+.rightArrow {
+    display: flex;
+    position: absolute;
+    top: 47%;
+    right: 2%;
+    width: 12px;
+    height: 20px;
+    z-index: 10;
+    cursor: pointer;
+
+    @media screen and (min-width: $breakpoint-desktop) {
+        width: 47px;
+        height: 79px;
+        top: 42%;
+    }
+}
+
+.leftArrow {
+    display: flex;
+    position: absolute;
+    top: 47%;
+    left: 2%;
+    width: 12px;
+    height: 20px;
+    z-index: 10;
+    cursor: pointer;
+
+    @media screen and (min-width: $breakpoint-desktop) {
+        width: 47px;
+        height: 79px;
+        top: 42%;
+    }
+}
+.active-anim {
+    
+    animation: appear_img 500ms;
+    animation-timing-function: ease-in-out;
+}

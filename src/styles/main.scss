@@ -1,8 +1,19 @@
+@import './tools/_variables.scss';
+@import './tools/_mixin.scss';
+
+
+@import './Base/base.scss';
+
+
 @import './components/_header.scss';
+@import './components/_nav.scss';
 @import './components/_footer.scss';
 @import './components/_banner.scss';
 @import './components/_error.scss';
-@import './components/_header.scss';
-@import './components/_footer.scss';
-@import './components/_banner.scss';
-@import './components/_error.scss';
+@import './components/_cards.scss';
+@import './components/_AboutBanner.scss';
+@import './components/_carrousel.scss';
+@import './components/_collapse.scss';
+@import './components/host.scss';
+@import './components/tag.scss';
+@import './components/rate.scss';

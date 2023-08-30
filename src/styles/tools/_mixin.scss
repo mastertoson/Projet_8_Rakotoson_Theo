@@ -1,0 +1,36 @@
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@mixin body-position {
+    max-width: $wmax;
+    min-width: $wmin;
+    margin: auto;
+}
+
+@mixin small-radius {
+    border-radius: 10px;
+}
+
+@mixin big-radius {
+    border-radius: 25px;
+}
+
+@keyframes appear_img {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  
+  }

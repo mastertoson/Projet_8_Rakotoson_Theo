@@ -1,0 +1,23 @@
+.AboutBanner {
+    height: 223px;
+    border-radius: 10px;
+    @include flex-center;
+    width: 100%;
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.3) url(../../assets/images/mobile-about-background.png);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media screen and (min-width: $breakpoint-desktop) {
+        background: rgba(0, 0, 0, 0.3) url(../../assets/images/about-background.png);
+        background-blend-mode: darken;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 223px;
+        border-radius: 25px;
+        position: relative;
+        width: 100%;
+        margin-top: 20px;
+    }
+}

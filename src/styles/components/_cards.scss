@@ -1,9 +1,69 @@
+.card {
+    position: relative;
+    display: flex;
+    width: 335px;
+    height: 255px;
+    min-width: 335px;
+    @include small-radius;
+
+    @media screen and (min-width: $breakpoint-desktop) {
+        width: 340px;
+        height: 340px;
+
+    }
+
+    & img {
+        display: flex;
+        width: 100%;
+        object-fit: cover;
+        @include small-radius;
+    }
+
+    & .card_title_container {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        background: $gradient_bottom;
+        @include small-radius;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    & .card_title {
+        display: flex;
+        align-items: flex-end;
+        position: absolute;
+        font-size: 18px;
+        font-weight: 500;
+        color: #FFF;
+        left: 5.88%;
+        right: 5.88%;
+        top: 78.82%;
+        bottom: 5.88%;
+        line-height: 142.6%;
+    }
+}
+
 .cards_container {
     display: flex;
     justify-content: center;
     width: 100%;
     gap: 20px;
+    @include small-radius;
     margin: 22px 0;
     flex-wrap: wrap;
 
+    @media screen and (min-width: $breakpoint-desktop) {
+        gap: 50px;
+        padding: 5% 1%;
+        background-color: #f7f7f7;
+        @include big-radius;
+        margin: 43px 0;
+    }
+}
+
+.link_card_logement {
+    text-decoration: none;
 }
