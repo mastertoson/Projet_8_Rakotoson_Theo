@@ -5,7 +5,9 @@ import { Link } from "react-router-dom"
 function Header() {
     return (
         <header className='HeaderWrap'>
-            <Link to={'/'} className='HeaderWrap__fig'> <img className='logo' src={logo} alt="logo kasa" /> </Link>
+            <Link to={'/'} className='HeaderWrap__fig'> 
+            <img className='logo' src={logo} alt="logo kasa" /> 
+            </Link>
            
             <Nav className='navbar' />
         </header>
