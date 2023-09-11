@@ -28,9 +28,9 @@
             padding-left: 3.5rem;
         }
 
-        &:hover,
-        &:focus {
+        &_active {
             text-decoration-line: underline;
         }
     }
+    
 }

@@ -19,7 +19,7 @@ body {
 }
 @media (min-width: 769px) {
   body {
-    max-width: 100%;
+    max-width: 1440px;
   }
 }
 
@@ -101,7 +101,7 @@ main {
     padding-left: 3.5rem;
   }
 }
-.navbar__link_home:hover, .navbar__link_home:focus, .navbar__link_about:hover, .navbar__link_about:focus {
+.navbar__link_home_active, .navbar__link_about_active {
   text-decoration-line: underline;
 }
 

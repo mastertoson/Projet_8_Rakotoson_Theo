@@ -53,7 +53,7 @@ function Carrousel() {
           : "slider "}
         >
           {currentSlide === index && <img src={slide} alt="appartement à louer" />}
-          {currentSlide === index && (
+          {currentCarousel.length > 1 && currentSlide === index && (
             <span className="slider__number">
               {currentSlide + 1}/{length}
             </span>
